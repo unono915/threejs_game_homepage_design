@@ -32,3 +32,5 @@ npm run dev
 - Node.js 20.19 이상 권장
 
 Vite의 상대 경로 설정을 적용해 GitHub Pages의 프로젝트 하위 경로에서도 정적 자산이 정상 로드됩니다.
+
+`main` 브랜치에 변경 사항이 올라오면 `.github/workflows/deploy-pages.yml`이 자동으로 빌드하고 GitHub Pages에 배포합니다. 저장소의 **Settings → Pages → Build and deployment → Source**는 **GitHub Actions**로 설정해야 합니다.

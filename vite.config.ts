@@ -3,5 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: './',
+  base: process.env.GITHUB_ACTIONS
+    ? '/threejs_game_homepage_design/'
+    : '/',
 })
